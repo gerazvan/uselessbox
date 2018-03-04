@@ -1,25 +1,23 @@
 #include <Servo.h>
 
 const short int spdt = 13;
-Servo myservo;  // create servo object to control a servo
+Servo myservo;  
 Servo myservo2;
-// twelve servo objects can be created on most boards
 
-int pos = 0;    // variable to store the servo position
 
 void setup() {
   pinMode(spdt, INPUT);
-  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+  myservo.attach(9);  
   myservo2.attach(10);
-  myservo.write(120); //mana cu cutia inchisa; 180 deschide cutia
+  myservo.write(120); 
   myservo2.write(180);
 }
 
 void loop() {
   int val = digitalRead(spdt);
   if(val == 1) {
-    int b = random(1, 6);
-  switch(b) {
+  int b = random(1, 6); //variable used to get a random behaviour
+  switch(b) { 
     case 1: {
       behave1();
       break;
@@ -42,12 +40,10 @@ void loop() {
     }
   }
   }
-
   myservo.write(120);
-
- 
 }
 
+//behaviours
 void behave1() {
   myservo.write(180);
   delay(500);
@@ -130,23 +126,3 @@ void behave5() {
   delay(500);
   myservo.write(120);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
