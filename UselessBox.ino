@@ -1,8 +1,8 @@
 #include <Servo.h>
 
-const short int spdt = 13;
-Servo myservo;  
-Servo myservo2;
+const short int spdt = 13; //spdt switch is connected to pin 13
+Servo myservo; //servo used to open the lid
+Servo myservo2; //servo used to action the spdt switch
 
 
 void setup() {
@@ -14,7 +14,7 @@ void setup() {
 }
 
 void loop() {
-  int val = digitalRead(spdt);
+  int val = digitalRead(spdt); //reading the state of the spdt switch
   if(val == 1) {
   int b = random(1, 6); //variable used to get a random behaviour
   switch(b) { 
