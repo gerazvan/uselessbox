@@ -5,4 +5,5 @@
 -> Cutia are mai multe moduri de a interactiona cu switch-ul, de fiecare data fiind ales unul la intamplare.
 
 [BOM](https://docs.google.com/spreadsheets/d/12Vs8-9iJVOR7baDDDxViaNza3MNB9ZlG_7CaPrQD9Ko/edit?usp=sharing)
+
 [Link catre video hostat in Google Drive](https://photos.app.goo.gl/hCgE62mLyMXGg5Wg2)
